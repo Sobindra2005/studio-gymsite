@@ -14,8 +14,10 @@ export const HeroSection = defineType({
             type: 'string',
         }),
         defineField({
-            name: 'image',
-            type: 'image',
+            name: 'features',
+            type: 'array',
+            title: 'Features',
+            of: [{ type: 'image' }]
         }),
     ],
 })
